@@ -1,73 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>J&M Drywall Solution.LLC | San Diego</title>
+<title>J&M Drywall Solution | Professional Drywall Services</title>
 
 <style>
 body {
 margin: 0;
 font-family: Arial, sans-serif;
-background: #111;
-color: #fff;
+background: #f5f5f5;
+color: #333;
 }
 
+/* HEADER */
 header {
-background: linear-gradient(135deg, #000, #222);
-padding: 60px 20px;
+background: #111;
+color: white;
+padding: 15px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-size: 20px;
+font-weight: bold;
+color: #c9a13b;
+}
+
+nav a {
+color: white;
+margin: 0 10px;
+text-decoration: none;
+}
+
+nav a:hover {
+color: #c9a13b;
+}
+
+/* HERO */
+.hero {
+background: url('images/hero.jpg') center/cover no-repeat;
+height: 80vh;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
+color: white;
+padding: 20px;
 }
 
-header h1 {
-font-size: 40px;
-color: gold;
+.hero h1 {
+font-size: 48px;
+margin: 0;
 }
 
-header p {
-font-size: 18px;
-margin-top: 10px;
+.hero p {
+font-size: 20px;
 }
 
 .btn {
 display: inline-block;
-margin: 15px;
-padding: 15px 25px;
-background: gold;
-color: #000;
+margin: 10px;
+padding: 12px 20px;
+background: #c9a13b;
+color: white;
 text-decoration: none;
-font-weight: bold;
 border-radius: 5px;
 }
 
+/* SECTIONS */
 section {
-padding: 40px 20px;
+padding: 60px 20px;
 text-align: center;
 }
 
+h2 {
+color: #111;
+margin-bottom: 20px;
+}
+
+/* SERVICES */
 .services {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 gap: 20px;
 }
 
-.box {
-background: #222;
+.card {
+background: white;
 padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 10px;
+}
+
+.gallery img {
+width: 100%;
 border-radius: 10px;
 }
 
-.call-btn {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: gold;
-color: black;
-padding: 15px 20px;
-border-radius: 50px;
-text-decoration: none;
-font-weight: bold;
+/* CONTACT */
+.contact {
+background: #111;
+color: white;
+}
+
+.contact a {
+color: #c9a13b;
+}
+
+/* FOOTER */
+footer {
+background: #000;
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 14px;
 }
 </style>
 </head>
@@ -75,93 +131,64 @@ font-weight: bold;
 <body>
 
 <header>
-<h1>J&M Drywall Solution</h1>
-<p>Professional Drywall Services in San Diego</p>
-
-<a href="tel:8584071382" class="btn">📞 Call Now</a>
-<a href="#" class="btn">Free Estimate</a>
+<div class="logo">J&M DRYWALL</div>
+<nav>
+<a href="#services">Services</a>
+<a href="#gallery">Work</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section>
-<h2>About Us</h2>
-<p>
-We provide high-quality drywall installation, repair, patching, and finishing.
-Serving San Diego and surrounding areas with fast and professional service.
-</p>
-</section>
+<!-- HERO -->
+<div class="hero">
+<div>
+<h1>Professional Drywall Services</h1>
+<p>Reliable • Fast • High Quality Work</p>
+<a href="tel:8584071382" class="btn">Call Now</a>
+<a href="https://wa.me/18584071382" class="btn">WhatsApp</a>
+</div>
+</div>
 
-<section>
+<!-- SERVICES -->
+<section id="services">
 <h2>Our Services</h2>
 <div class="services">
-<div class="box">Drywall Installation</div>
-<div class="box">Drywall Repair</div>
-<div class="box">Hole Patching</div>
-<div class="box">Texture Matching</div>
-<div class="box">Painting</div>
-<div class="box">Commercial & Residential</div>
+<div class="card">
+<h3>Drywall Installation</h3>
+<p>Professional installation for homes and businesses.</p>
+</div>
+<div class="card">
+<h3>Drywall Repair</h3>
+<p>Fix holes, cracks, and damage quickly and clean.</p>
+</div>
+<div class="card">
+<h3>Finishing & Texture</h3>
+<p>Smooth finishing and modern textures.</p>
+</div>
 </div>
 </section>
 
-<section>
-<h2>Why Choose Us</h2>
-<p>
-✔ Fast & Reliable<br>
-✔ Clean Work<br>
-✔ Affordable Prices<br>
-✔ Free Estimates
-</p>
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>📞 858-407-1382</p>
-<p>Serving San Diego, CA</p>
-</section>
-
-<a href="tel:8584071382" class="call-btn">📞 Call</a>
-<a href="https://wa.me/18584071382" target="_blank"
-style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
-padding:15px 20px;border-radius:50px;text-decoration:none;
-font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-💬 WhatsApp
-</a>
-<h1>J&M Drywall Solution</h1>
-<p>Licensed • Professional • Reliable</p>
-  <h2>Professional Drywall Services</h2>
-<p>
-At J&M Drywall Solution, we provide high-quality drywall installation, repair, and finishing services.
-With years of experience, we deliver clean, precise, and reliable work for residential and commercial projects.
-</p>
-
-<p>
-✔ Drywall Installation<br>
-✔ Drywall Repair<br>
-✔ Texture & Finishing<br>
-✔ Painting Services<br>
-✔ Free Estimates
-</p>
+<!-- GALLERY -->
+<section id="gallery">
 <h2>Our Work</h2>
-<section style="padding: 40px; text-align: center;">
-<h2>Drywall Repair Services</h2>
-<p>Professional drywall repair, patching, and finishing for a perfect wall surface.</p>
+<div class="gallery">
+<img src="images/work1.jpg" alt="Drywall Work">
+<img src="images/work2.jpg" alt="Drywall Work">
+<img src="images/work3.jpg" alt="Drywall Work">
+</div>
+</section>
 
-<div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>Phone: <a href="tel:8584071382">858-407-1382</a></p>
+<p>Email: jmdrywall@gmail.com</p>
+</section>
 
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=60"
-alt="Drywall repair worker fixing wall"
-style="width: 300px; border-radius: 10px;">
-
-<div style="margin-top:30px;">
-<a href="tel:8584071382"
-style="background:#28a745; color:white; padding:15px 25px;
-text-decoration:none; font-size:18px; border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-📞 Call Now
- <!-- Phone -->
-<p>
-📞 Phone: 858-407-1382
-</p>
+<footer>
+<p>© 2026 J&M Drywall Solution. All rights reserved.</p>
+</footer>
 
 </body>
+  </html>
   
-</html>
