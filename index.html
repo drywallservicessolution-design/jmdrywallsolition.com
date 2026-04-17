@@ -1,37 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="description" content="J&M Drywall Solution provides professional drywall installation, repair, and finishing services in San Diego. Fast, reliable, and high-quality work for residential and commercial projects.">
 
-<meta name="keywords" content="drywall contractor San Diego, drywall repair, drywall installation, drywall finishing, drywall company near me, construction services San Diego">
-
-<meta name="author" content="J&M Drywall Solution">
-
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="J&M Drywall Solution | Professional Drywall Services">
-<meta property="og:description" content="High-quality drywall installation, repair, and finishing services in San Diego. Reliable and affordable contractor.">
-<meta property="og:type" content="website">
-  
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Drywall Contractor San Diego | J&M Drywall Solution</title>
-  
+
+<meta name="description" content="Professional drywall installation, repair, and finishing services in San Diego. Fast, reliable contractor for residential and commercial projects.">
+<meta name="keywords" content="drywall contractor San Diego, drywall repair, drywall installation, drywall finishing">
+<meta name="robots" content="index, follow">
+
+<!-- OPEN GRAPH (Google + Facebook) -->
+<meta property="og:title" content="J&M Drywall Solution">
+<meta property="og:description" content="Professional drywall services in San Diego">
+<meta property="og:type" content="website">
 
 <style>
-body {margin:0;font-family:Arial;background:#f5f5f5;color:#333;}
 
-header{
-background:#111;color:#fff;
-display:flex;justify-content:space-between;
-padding:15px 30px;align-items:center;
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+color:#333;
 }
 
-.logo{color:#c9a13b;font-weight:bold;}
+/* HEADER */
+header{
+background:#0f0f0f;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+position:sticky;
+top:0;
+}
 
-nav a{color:white;margin:0 10px;text-decoration:none;}
+.logo{
+color:#c9a13b;
+font-weight:bold;
+font-size:20px;
+}
 
-<h1>Professional Drywall Contractor in San Diego</h1>
-<p>Expert drywall installation, repair, and finishing for residential and commercial projects.</p>
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#c9a13b;
+}
+
+/* HERO */
+.hero{
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:10px;
+}
 
 .btn{
 display:inline-block;
@@ -39,25 +74,72 @@ background:#c9a13b;
 color:white;
 padding:12px 20px;
 margin:10px;
-text-decoration:none;
 border-radius:5px;
+text-decoration:none;
+font-weight:bold;
 }
 
-section{padding:60px 20px;text-align:center;}
+/* SECTIONS */
+section{
+padding:70px 20px;
+text-align:center;
+}
+
+h2{
+font-size:30px;
+margin-bottom:20px;
+color:#111;
+}
+
+/* SERVICES */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
 
 .card{
 background:white;
 padding:20px;
-margin:10px;
 border-radius:10px;
-display:inline-block;
-width:250px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-footer{
-background:#000;color:white;
-padding:20px;text-align:center;
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:10px;
+max-width:1000px;
+margin:auto;
 }
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
+.contact{
+background:#111;
+color:white;
+}
+
+.contact a{
+color:#c9a13b;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+
 </style>
 
 </head>
@@ -68,40 +150,59 @@ padding:20px;text-align:center;
 <div class="logo">J&M DRYWALL</div>
 <nav>
 <a href="#services">Services</a>
-<a href="#work">Work</a>
+<a href="#gallery">Work</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<h1>Professional Drywall Services</h1>
-<p>Fast • Clean • Reliable Work</p>
+<h1>Professional Drywall Contractor in San Diego</h1>
+<p>Fast • Clean • Reliable Work You Can Trust</p>
+
 <a href="tel:8584071382" class="btn">Call Now</a>
 <a href="https://wa.me/18584071382" class="btn">WhatsApp</a>
 </div>
 
+<!-- SERVICES -->
 <section id="services">
-<h2>Services</h2>
+<h2>Our Services</h2>
 
+<div class="grid">
 <div class="card">Drywall Installation</div>
 <div class="card">Drywall Repair</div>
-<div class="card">Finishing</div>
-
+<div class="card">Finishing & Texture</div>
+<div class="card">Residential & Commercial</div>
+</div>
 </section>
 
-<section id="work">
+<!-- GALLERY -->
+<section id="gallery">
 <h2>Our Work</h2>
-<p>Add images later</p>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Drywall Work">
+<img src="https://images.unsplash.com/photo-1581093458791-9d42e1b5f4b7" alt="Construction Work">
+<img src="https://images.unsplash.com/photo-1590725121839-892b458a74fe" alt="Renovation Work">
+</div>
 </section>
 
-<<p><strong>Location:</strong> San Diego, California</p>
-  
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+
+<p>📞 Phone: <a href="tel:8584071382">858-407-1382</a></p>
+<p>💬 WhatsApp: <a href="https://wa.me/18584071382">Message Us</a></p>
+<p>📧 Email: <a href="mailto: DRYWALLSERVICE.SOLUTION@GMAIL.COM.com">info@jmdrywallsolution.com</a></p>
+
+</section>
 
 <footer>
-© 2026 J&M Drywall Solution
+© 2026 J&M Drywall Solution. All rights reserved.
 </footer>
 
 </body>
-</html>
+  </html>
+  
 
   
