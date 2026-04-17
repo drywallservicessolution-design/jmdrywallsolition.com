@@ -3,129 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>J&M Drywall Solution | Professional Drywall Services</title>
+<title>J&M Drywall Solution</title>
 
 <style>
-body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: #f5f5f5;
-color: #333;
+body {margin:0;font-family:Arial;background:#f5f5f5;color:#333;}
+
+header{
+background:#111;color:#fff;
+display:flex;justify-content:space-between;
+padding:15px 30px;align-items:center;
 }
 
-/* HEADER */
-header {
-background: #111;
-color: white;
-padding: 15px 30px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.logo{color:#c9a13b;font-weight:bold;}
+
+nav a{color:white;margin:0 10px;text-decoration:none;}
+
+.hero{
+background:#222;color:white;
+text-align:center;padding:100px 20px;
 }
 
-.logo {
-font-size: 20px;
-font-weight: bold;
-color: #c9a13b;
+.btn{
+display:inline-block;
+background:#c9a13b;
+color:white;
+padding:12px 20px;
+margin:10px;
+text-decoration:none;
+border-radius:5px;
 }
 
-nav a {
-color: white;
-margin: 0 10px;
-text-decoration: none;
+section{padding:60px 20px;text-align:center;}
+
+.card{
+background:white;
+padding:20px;
+margin:10px;
+border-radius:10px;
+display:inline-block;
+width:250px;
 }
 
-nav a:hover {
-color: #c9a13b;
-}
-
-/* HERO */
-.hero {
-background: url('images/hero.jpg') center/cover no-repeat;
-height: 80vh;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-color: white;
-padding: 20px;
-}
-
-.hero h1 {
-font-size: 48px;
-margin: 0;
-}
-
-.hero p {
-font-size: 20px;
-}
-
-.btn {
-display: inline-block;
-margin: 10px;
-padding: 12px 20px;
-background: #c9a13b;
-color: white;
-text-decoration: none;
-border-radius: 5px;
-}
-
-/* SECTIONS */
-section {
-padding: 60px 20px;
-text-align: center;
-}
-
-h2 {
-color: #111;
-margin-bottom: 20px;
-}
-
-/* SERVICES */
-.services {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 20px;
-}
-
-.card {
-background: white;
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* GALLERY */
-.gallery {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 10px;
-}
-
-.gallery img {
-width: 100%;
-border-radius: 10px;
-}
-
-/* CONTACT */
-.contact {
-background: #111;
-color: white;
-}
-
-.contact a {
-color: #c9a13b;
-}
-
-/* FOOTER */
-footer {
-background: #000;
-color: white;
-text-align: center;
-padding: 20px;
-font-size: 14px;
+footer{
+background:#000;color:white;
+padding:20px;text-align:center;
 }
 </style>
+
 </head>
 
 <body>
@@ -134,61 +58,43 @@ font-size: 14px;
 <div class="logo">J&M DRYWALL</div>
 <nav>
 <a href="#services">Services</a>
-<a href="#gallery">Work</a>
+<a href="#work">Work</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
-<!-- HERO -->
 <div class="hero">
-<div>
 <h1>Professional Drywall Services</h1>
-<p>Reliable • Fast • High Quality Work</p>
+<p>Fast • Clean • Reliable Work</p>
 <a href="tel:8584071382" class="btn">Call Now</a>
 <a href="https://wa.me/18584071382" class="btn">WhatsApp</a>
 </div>
-</div>
 
-<!-- SERVICES -->
 <section id="services">
-<h2>Our Services</h2>
-<div class="services">
-<div class="card">
-<h3>Drywall Installation</h3>
-<p>Professional installation for homes and businesses.</p>
-</div>
-<div class="card">
-<h3>Drywall Repair</h3>
-<p>Fix holes, cracks, and damage quickly and clean.</p>
-</div>
-<div class="card">
-<h3>Finishing & Texture</h3>
-<p>Smooth finishing and modern textures.</p>
-</div>
-</div>
+<h2>Services</h2>
+
+<div class="card">Drywall Installation</div>
+<div class="card">Drywall Repair</div>
+<div class="card">Finishing</div>
+
 </section>
 
-<!-- GALLERY -->
-<section id="gallery">
+<section id="work">
 <h2>Our Work</h2>
-<div class="gallery">
-<img src="images/work1.jpg" alt="Drywall Work">
-<img src="images/work2.jpg" alt="Drywall Work">
-<img src="images/work3.jpg" alt="Drywall Work">
-</div>
+<p>Add images later</p>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<h2>Contact Us</h2>
-<p>Phone: <a href="tel:8584071382">858-407-1382</a></p>
-<p>Email: jmdrywall@gmail.com</p>
+<section id="contact">
+<h2>Contact</h2>
+<p>Phone: 858-407-1382</p>
+<p>Email: youremail@gmail.com</p>
 </section>
 
 <footer>
-<p>© 2026 J&M Drywall Solution. All rights reserved.</p>
+© 2026 J&M Drywall Solution
 </footer>
 
 </body>
-  </html>
+</html>
+
   
