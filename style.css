@@ -243,4 +243,14 @@ font-size: 2rem;
 flex-direction: column;
 }
   }
-  
+  .logo {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.logo img {
+width: 60px;
+height: 60px;
+object-fit: contain;
+  }
