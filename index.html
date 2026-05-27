@@ -1,258 +1,124 @@
-export default function JMDrywallWebsite() 
-return (
-<div className="bg-white text-gray-900 min-h-screen">
-{/* HERO */}
-<section className="bg-slate-900 text-white px-6 py-20">
-<div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-<div>
-<h1 className="text-5xl font-bold leading-tight mb-6">
-Professional Drywall Installation & Repair Services in California
-</h1>
 
-<p className="text-xl text-slate-300 mb-8">
-JM Drywall Solution provides professional drywall installation,
-drywall repair, level 4 and level 5 finishes, texture matching,
-taping and commercial drywall services across California.
-</p>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<div className="flex flex-wrap gap-4">
-<a
-href="tel:+1858-407-1382"
-className="bg-blue-600 hover:bg-blue-700 px-6 py-4 rounded-2xl font-semibold shadow-xl"
->
-Call Now
-</a>
+<title>JMD Drywall Solution | Website Coming Soon</title>
 
-<a
-href="https://wa.me/+1858-407-4598"
-className="bg-green-600 hover:bg-green-700 px-6 py-4 rounded-2xl font-semibold shadow-xl"
->
-WhatsApp
-</a>
-</div>
-</div>
+<meta name="description" content="JMD Drywall Solution is currently updating our website. Professional drywall, taping, texture, painting, and remodeling services coming soon." />
 
-<div>
-<img
-src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop"
-alt="Professional drywall installation in California"
-className="rounded-3xl shadow-2xl"
-/>
-</div>
-</div>
-</section>
-
-{/* ABOUT */}
-<section className="py-20 px-6 bg-slate-100">
-<div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-<div>
-<img
-src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop"
-alt="Owner of JM Drywall Solution"
-className="rounded-3xl shadow-xl"
-/>
-</div>
-
-<div>
-<h2 className="text-4xl font-bold mb-6">Meet The Owner</h2>
-
-<p className="text-lg leading-8 text-gray-700">
-JM Drywall Solution is committed to delivering professional drywall
-services with high quality finishes, honest pricing and reliable
-customer service. We proudly help homeowners, contractors and
-businesses across California with clean and professional drywall
-work.
-</p>
-</div>
-</div>
-</section>
-
-{/* SERVICES */}
-<section className="py-20 px-6">
-<div className="max-w-7xl mx-auto text-center mb-16">
-<h2 className="text-4xl font-bold mb-6">Our Drywall Services</h2>
-
-<p className="text-xl text-gray-600 max-w-4xl mx-auto">
-Professional drywall services for residential and commercial
-projects across California.
-</p>
-</div>
-
-<div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-{[
-"Drywall Installation",
-"Drywall Repair",
-"Level 4 Finish",
-"Level 5 Finish",
-"Texture Matching",
-"Commercial Drywall",
-"Residential Drywall",
-"Drywall Taping",
-"Sheetrock Installation",
-].map((service) => (
-<div
-key={service}
-className="bg-white border border-slate-200 p-8 rounded-3xl shadow-lg"
->
-<h3 className="text-2xl font-bold mb-4">{service}</h3>
-
-<p className="text-gray-600 leading-7">
-Professional {service.toLowerCase()} services with clean
-finishes and reliable workmanship.
-</p>
-</div>
-))}
-</div>
-</section>
-
-{/* GALLERY */}
-<section className="py-20 px-6 bg-slate-100">
-<div className="max-w-7xl mx-auto text-center mb-16">
-<h2 className="text-4xl font-bold mb-6">Recent Projects</h2>
-
-<p className="text-xl text-gray-600">
-Professional drywall finishes across California.
-</p>
-</div>
-
-<div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
-<img
-src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
-alt="Level 5 drywall finish in California"
-className="rounded-3xl shadow-xl h-80 w-full object-cover"
-/>
-
-<img
-src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop"
-alt="Drywall texture repair in Los Angeles"
-className="rounded-3xl shadow-xl h-80 w-full object-cover"
-/>
-
-<img
-src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
-alt="Commercial drywall contractor in California"
-className="rounded-3xl shadow-xl h-80 w-full object-cover"
-/>
-</div>
-</section>
-
-{/* SEO CITIES */}
-<section className="py-20 px-6">
-<div className="max-w-6xl mx-auto text-center">
-<h2 className="text-4xl font-bold mb-8">Areas We Serve</h2>
-
-<p className="text-xl text-gray-700 leading-9">
-Los Angeles, Riverside, San Diego, Orange County, Anaheim,
-Ontario, Corona, Long Beach, Pasadena, Santa Ana, Irvine,
-Temecula, Moreno Valley, Fontana, Rancho Cucamonga,
-San Bernardino and surrounding California areas.
-</p>
-</div>
-</section>
-
-{/* FAQ */}
-<section className="py-20 px-6 bg-slate-900 text-white">
-<div className="max-w-5xl mx-auto">
-<h2 className="text-4xl font-bold mb-12 text-center">
-Frequently Asked Questions
-</h2>
-
-<div className="space-y-8">
-<div className="bg-slate-800 p-8 rounded-3xl">
-<h3 className="text-2xl font-bold mb-4">
-Who is the best drywall contractor in California?
-</h3>
-
-<p className="text-slate-300 leading-8">
-JM Drywall Solution provides professional drywall installation,
-drywall repair and level 5 finishes across California.
-</p>
-</div>
-
-<div className="bg-slate-800 p-8 rounded-3xl">
-<h3 className="text-2xl font-bold mb-4">
-Do you offer free drywall estimates?
-</h3>
-
-<p className="text-slate-300 leading-8">
-Yes, we provide free drywall estimates for residential and
-commercial drywall projects.
-</p>
-</div>
-
-<div className="bg-slate-800 p-8 rounded-3xl">
-<h3 className="text-2xl font-bold mb-4">
-What cities do you serve?
-</h3>
-
-<p className="text-slate-300 leading-8">
-We serve Los Angeles, Riverside, San Diego, Orange County and
-nearby California cities.
-</p>
-</div>
-</div>
-</div>
-</section>
-
-{/* CONTACT */}
-<section className="py-20 px-6">
-<div className="max-w-5xl mx-auto text-center">
-<h2 className="text-4xl font-bold mb-8">
-Contact JM Drywall Solution
-</h2>
-
-<p className="text-xl text-gray-700 mb-10 leading-8">
-Call, text or message us on WhatsApp for fast drywall estimates.
-</p>
-
-<div className="grid md:grid-cols-3 gap-6">
-<div className="border border-slate-200 rounded-3xl p-8 shadow-lg">
-<h3 className="text-2xl font-bold mb-4">Phone</h3>
-
-<a
-href="tel:858-407-1382"
-className="text-blue-600 text-lg font-semibold"
->
-(000) 000-0000
-</a>
-</div>
-
-<div className="border border-slate-200 rounded-3xl p-8 shadow-lg">
-<h3 className="text-2xl font-bold mb-4">Email</h3>
-
-<p className="text-lg">jmdrywallsolution@gmail.com</p>
-</div>
-
-<div className="border border-slate-200 rounded-3xl p-8 shadow-lg">
-<h3 className="text-2xl font-bold mb-4">WhatsApp</h3>
-
-<a
-href="https://wa.me/+1858-407-4598"
-className="text-green-600 text-lg font-semibold"
->
-Message Us
-</a>
-</div>
-</div>
-</div>
-</section>
-
-{/* FOOTER */}
-<footer className="bg-slate-950 text-slate-400 py-10 px-6 text-center">
-<p className="mb-4 text-lg">
-JM Drywall Solution © 2026 — Professional Drywall Services in
-California
-</p>
-
-<div className="flex justify-center gap-6 flex-wrap">
-<a href="https://facebook.com">Facebook</a>
-<a href="https://instagram.com">Instagram</a>
-<a href="https://tiktok.com">TikTok</a>
-<a href="https://wa.me/+1858-407-4598">WhatsApp</a>
-</div>
-</footer>
-</div>
-)
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
-  
+
+body{
+background:#111;
+color:#fff;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.container{
+max-width:700px;
+}
+
+h1{
+font-size:55px;
+color:#f5b942;
+margin-bottom:20px;
+}
+
+h2{
+font-size:30px;
+margin-bottom:25px;
+font-weight:normal;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+color:#ddd;
+margin-bottom:15px;
+}
+
+.phone{
+margin-top:25px;
+font-size:24px;
+font-weight:bold;
+color:#fff;
+}
+
+.email{
+margin-top:10px;
+color:#f5b942;
+font-size:18px;
+}
+
+.footer{
+margin-top:40px;
+font-size:14px;
+color:#888;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:38px;
+}
+
+h2{
+font-size:22px;
+}
+
+p{
+font-size:16px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>JMD DRYWALL SOLUTION</h1>
+
+<h2>NEW WEBSITE COMING SOON</h2>
+
+<p>
+We are currently updating our website to provide a better experience for our customers.
+</p>
+
+<p>
+Drywall • Taping • Texture • Painting • Remodeling
+</p>
+
+<div class="phone">
+Call Us Today: (858-407-1382)
+</div>
+
+<div class="email">
+jmdywallsolution@gmail.com
+</div>
+
+<div class="footer">
+Serving California & Surrounding Areas
+</div>
+
+</div>
+
+</body>
+</html>
+
   
