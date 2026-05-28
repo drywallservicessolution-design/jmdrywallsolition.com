@@ -2,123 +2,401 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>J&M Drywall Solution LLC | Website Coming Soon</title>
+<title>J&M Drywall Solution LLC | Drywall & Painting Services</title>
 
-<meta name="description" content="J&M Drywall Solution LLC is currently updating our website. Professional drywall, taping, texture, painting, and remodeling services coming soon." />
+<meta name="description" content="Professional drywall installation, drywall repair, texture, painting, patch work, and water damage repair services in Los Angeles, San Diego, Orange County, Riverside, and surrounding California areas." />
+
+<meta name="keywords" content="Drywall contractor Los Angeles, Drywall San Diego, Drywall repair, Drywall installation, Patch work, Texture, Interior painting, Exterior painting, Water damage repair, Level 4 finish, Drywall company California" />
+
+<meta name="author" content="J&M Drywall Solution LLC" />
+
+<meta property="og:title" content="J&M Drywall Solution LLC" />
+<meta property="og:description" content="Professional drywall and painting services in Southern California." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
 }
 
-body{
-background:#111;
-color:#fff;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+body {
+background: #f5f7fa;
+color: #222;
+line-height: 1.6;
 }
 
-.container{
-max-width:700px;
+header {
+background: #0d1b2a;
+color: white;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
 }
 
-h1{
-font-size:55px;
-color:#f5b942;
-margin-bottom:20px;
+.logo {
+font-size: 28px;
+font-weight: 700;
+color: #fff;
 }
 
-h2{
-font-size:30px;
-margin-bottom:25px;
-font-weight:normal;
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+font-weight: 500;
+transition: 0.3s;
 }
 
-p{
-font-size:18px;
-line-height:1.7;
-color:#ddd;
-margin-bottom:15px;
+nav a:hover {
+color: #ff6b00;
 }
 
-.phone{
-margin-top:25px;
-font-size:24px;
-font-weight:bold;
-color:#fff;
+.hero {
+height: 90vh;
+background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1974&auto=format&fit=crop');
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+padding: 0 8%;
+color: white;
 }
 
-.email{
-margin-top:10px;
-color:#f5b942;
-font-size:18px;
+.hero-content {
+max-width: 700px;
 }
 
-.footer{
-margin-top:40px;
-font-size:14px;
-color:#888;
+.hero h1 {
+font-size: 58px;
+margin-bottom: 20px;
+line-height: 1.1;
 }
 
-@media(max-width:768px){
-
-h1{
-font-size:38px;
+.hero p {
+font-size: 20px;
+margin-bottom: 30px;
 }
 
-h2{
-font-size:22px;
+.btn {
+display: inline-block;
+background: #ff6b00;
+color: white;
+padding: 15px 30px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
+margin-right: 15px;
 }
 
-p{
-font-size:16px;
+.btn:hover {
+background: #e65c00;
+transform: translateY(-2px);
 }
 
+section {
+padding: 80px 8%;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.section-title h2 {
+font-size: 42px;
+color: #0d1b2a;
+margin-bottom: 10px;
+}
+
+.services {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 25px;
+}
+
+.service-card {
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+transition: 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}
+
+.service-card h3 {
+margin-bottom: 15px;
+color: #0d1b2a;
+}
+
+.about {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 40px;
+align-items: center;
+}
+
+.about img {
+width: 100%;
+border-radius: 15px;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+}
+
+.gallery img {
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-radius: 12px;
+}
+
+.locations {
+background: #0d1b2a;
+color: white;
+text-align: center;
+}
+
+.locations p {
+max-width: 900px;
+margin: auto;
+font-size: 18px;
+}
+
+.contact {
+text-align: center;
+}
+
+.contact h3 {
+font-size: 36px;
+margin-bottom: 20px;
+color: #0d1b2a;
+}
+
+.phone {
+font-size: 28px;
+color: #ff6b00;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+footer {
+background: #09131f;
+color: white;
+text-align: center;
+padding: 30px;
+}
+
+.floating-buttons {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+z-index: 1000;
+}
+
+.floating-buttons a {
+background: #25D366;
+color: white;
+padding: 14px 18px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.floating-buttons .call {
+background: #ff6b00;
+}
+
+@media(max-width: 768px) {
+.hero h1 {
+font-size: 40px;
+}
+
+nav {
+display: none;
+}
 }
 </style>
 </head>
-
 <body>
 
-<div class="container">
+<header>
+<div class="logo">J&M Drywall Solution LLC</div>
 
-<h1>J&amp;M DRYWALL SOLUTION LLC</h1>
+<nav>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-<h2>NEW WEBSITE COMING SOON</h2>
+<section class="hero">
+<div class="hero-content">
+<h1>Professional Drywall & Painting Services</h1>
 
 <p>
-We are currently updating our website to provide a better experience for our customers.
+Drywall installation, repair, texture, patch work, painting,
+and water damage repair across Los Angeles, San Diego,
+and surrounding California areas.
 </p>
+
+<a href="tel:+18584071382" class="btn">Call Now</a>
+<a href="https://wa.me/18584071382" class="btn">WhatsApp</a>
+</div>
+</section>
+
+<section id="services">
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Professional residential and commercial drywall services</p>
+</div>
+
+<div class="services">
+<div class="service-card">
+<h3>Drywall Installation</h3>
+<p>Complete drywall installation for homes, remodels, and commercial projects.</p>
+</div>
+
+<div class="service-card">
+<h3>Drywall Repair</h3>
+<p>Fast drywall repair, cracks, holes, and damaged wall restoration.</p>
+</div>
+
+<div class="service-card">
+<h3>Patch Work</h3>
+<p>Professional patch work and seamless wall finishing.</p>
+</div>
+
+<div class="service-card">
+<h3>Texture & Tape</h3>
+<p>Orange peel, knockdown, smooth finish, and custom textures.</p>
+</div>
+
+<div class="service-card">
+<h3>Interior Painting</h3>
+<p>High-quality interior painting services with professional finishes.</p>
+</div>
+
+<div class="service-card">
+<h3>Exterior Painting</h3>
+<p>Exterior house painting and weather-resistant coatings.</p>
+</div>
+
+<div class="service-card">
+<h3>Water Damage Repair</h3>
+<p>Drywall replacement and repair after leaks and water damage.</p>
+</div>
+
+<div class="service-card">
+<h3>Level 4 Finish</h3>
+<p>Smooth and professional drywall finishing for premium projects.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="about">
+<div>
+<img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1974&auto=format&fit=crop" alt="Drywall Contractor">
+</div>
+
+<div>
+<h2>About J&M Drywall Solution LLC</h2>
+<br>
+<p>
+We are a professional drywall and painting company proudly serving Los Angeles,
+San Diego, Orange County, Riverside, Chula Vista, Anaheim, Long Beach,
+and surrounding Southern California areas.
+</p>
+<br>
+<p>
+Our team focuses on quality workmanship, reliable service,
+and professional finishes for residential and commercial projects.
+</p>
+<br>
+<a href="tel:+18584071382" class="btn">Free Estimate</a>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="section-title">
+<h2>Recent Projects</h2>
+<p>Professional drywall and painting results</p>
+</div>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1974&auto=format&fit=crop" alt="Project 1">
+
+<img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=2070&auto=format&fit=crop" alt="Project 2">
+
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop" alt="Project 3">
+</div>
+</section>
+
+<section class="locations">
+<div class="section-title">
+<h2 style="color:white;">Service Areas</h2>
+</div>
 
 <p>
-Drywall • Taping • Texture • Painting • Remodeling
+We proudly serve Los Angeles, San Diego, Orange County,
+Riverside, Anaheim, Long Beach, Chula Vista,
+Escondido, and surrounding Southern California areas.
 </p>
+</section>
 
-<div class="phone">
-Call Us Today: (858-407-1382)
-</div>
+<section id="contact" class="contact">
+<h3>Contact Us Today</h3>
 
-<div class="email">
-jmdywallsolution@gmail.com
-</div>
+<div class="phone">+1 (858) 407-1382</div>
 
-<div class="footer">
-Serving California & Surrounding Areas
-</div>
+<p>
+Call now for drywall installation, repair, texture,
+painting, and free estimates.
+</p>
+<br>
 
+<a href="tel:+18584071382" class="btn">Call Now</a>
+<a href="https://wa.me/18584074598" class="btn">WhatsApp</a>
+</section>
+
+<footer>
+<p>© 2026 J&M Drywall Solution LLC | All Rights Reserved</p>
+</footer>
+
+<div class="floating-buttons">
+<a href="https://wa.me/18584071382">WhatsApp</a>
+<a href="tel:+18584071382" class="call">Call</a>
 </div>
 
 </body>
-</html>
+  </html>
+  
 
 
   
