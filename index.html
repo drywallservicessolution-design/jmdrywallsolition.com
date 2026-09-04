@@ -1,1 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="description" content="J&M Drywall Solution LLC provides professional drywall repair, installation, texture, finishing and painting services. Free estimates.">
+
+<title>J&M Drywall Solution LLC | Drywall Repair & Installation</title>
+
+<style>
+:root{
+--red:#e52b22;
+--dark:#111;
+--light:#f6f6f6;
+--white:#fff;
+--max:1180px;
+--shadow:0 12px 35px rgba(0,0,0,.10);
+--radius:14px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:#171717;
+line-height:1.6;
+background:#fff
+}
+
+img{
+max-width:100%;
+display:block
+}
+
+a{
+text-decoration:none;
+color:inherit
+}
+
+.container{
+width:min(92%,var(--max));
+margin:auto
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:#fff;
+border-bottom:1px solid #e8e8e8
+}
+
+.nav{
+min-height:74px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:900
+}
+
+.brand-mark{
+font-size:32px;
+letter-spacing:-2px;
+line-height:1
+}
+
+.brand-mark span{
+color:var(--red)
+}
+
+.brand small{
+display:block;
+font-size:10px;
+letter-spacing:1.4px
+}
+
+.menu{
+display:flex;
+align-items:center;
+gap:28px;
+font-size:14px;
+font-weight:800
+}
+
+.menu a:hover{
+color:var(--red)
+}
+
+.nav-phone{
+background:var(--red);
+color:#fff;
+padding:13px 18px;
+border-radius:6px;
+font-weight:900;
+white-space:nowrap
+}
+
+/* HERO */
+
+.hero{
+min-height:650px;
+display:flex;
+align-items:center;
+position:relative;
+
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,.92) 0%,
+rgba(0,0,0,.78) 42%,
+rgba(0,0,0,.25) 100%
+),
+url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85")
+center/cover no-repeat;
+
+color:#fff
+}
+
+.hero-content{
+padding:75px 0;
+max-width:760px
+}
+
+.eyebrow{
+font-size:20px;
+font-weight:800;
+letter-spacing:.8px;
+margin-bottom:8px
+}
+
+h1{
+font-size:clamp(42px,6vw,76px);
+line-height:.98;
+letter-spacing:-2px;
+margin-bottom:18px
+}
+
+.red{
+color:var(--red)
+}
+
+.hero p{
+font-size:19px;
+max-width:650px;
+color:#eee;
+margin-bottom:25px
+}
+
+.trust-row{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+margin:20px 0 30px
+}
+
+.trust{
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:800;
+font-size:14px
+}
+
+.check{
+color:var(--red);
+font-size:20px
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+min-height:52px;
+padding:0 24px;
+border-radius:5px;
+font-weight:900;
+transition:.2s;
+cursor:pointer;
+border:2px solid transparent
+}
+
+.btn-primary{
+background:var(--red);
+color:#fff
+}
+
+.btn-primary:hover{
+background:#c91f18;
+transform:translateY(-1px)
+}
+
+.btn-outline{
+border-color:#fff;
+color:#fff
+}
+
+.btn-outline:hover{
+background:#fff;
+color:#111
+}
+
+.hero-note{
+margin-top:18px;
+font-size:14px;
+color:#ddd
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 0
+}
+
+.section-title{
+text-align:center;
+margin-bottom:42px
+}
+
+.section-title h2{
+font-size:38px;
+line-height:1.1;
+margin-bottom:10px
+}
+
+.section-title p{
+color:#666;
+max-width:700px;
+margin:auto
+}
+
+.section-title:after{
+content:"";
+display:block;
+width:55px;
+height:4px;
+background:var(--red);
+margin:15px auto 0
+}
+
+/* PROBLEM */
+
+.problem{
+background:#fff;
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:55px;
+align-items:center
+}
+
+.problem h2{
+font-size:42px;
+line-height:1.1;
+margin-bottom:16px
+}
+
+.problem p{
+color:#555;
+margin-bottom:22px
+}
+
+.list{
+list-style:none;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px 20px;
+margin-bottom:25px
+}
+
+.list li{
+font-weight:700
+}
+
+.list li:before{
+content:"✓";
+color:var(--red);
+font-weight:900;
+margin-right:9px
+}
+
+.photo-card{
+border-radius:var(--radius);
+overflow:hidden;
+box-shadow:var(--shadow)
+}
+
+.photo-card img{
+width:100%;
+height:420px;
+object-fit:cover
+}
+
+/* SERVICES */
+
+.services{
+background:var(--light)
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.service{
+background:#fff;
+border:1px solid #e7e7e7;
+border-radius:12px;
+padding:28px;
+transition:.2s
+}
+
+.service:hover{
+transform:translateY(-4px);
+box-shadow:var(--shadow)
+}
+
+.icon{
+font-size:30px;
+color:var(--red);
+margin-bottom:12px
+}
+
+.service h3{
+font-size:20px;
+margin-bottom:8px
+}
+
+.service p{
+color:#666;
+font-size:15px
+}
+
+/* WHY */
+
+.why{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center
+}
+
+.why-img{
+border-radius:var(--radius);
+overflow:hidden;
+box-shadow:var(--shadow)
+}
+
+.why-img img{
+height:480px;
+width:100%;
+object-fit:cover
+}
+
+.why h2{
+font-size:40px;
+line-height:1.1;
+margin-bottom:20px
+}
+
+.why-list{
+display:grid;
+gap:18px;
+margin:25px 0
+}
+
+.why-item{
+display:flex;
+gap:13px
+}
+
+.why-item strong{
+display:block;
+font-size:17px
+}
+
+.why-item span{
+color:#666;
+font-size:15px
+}
+
+/* GALLERY */
+
+.gallery{
+background:var(--light)
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px
+}
+
+.gallery-item{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+background:#ddd;
+min-height:250px
+}
+
+.gallery-item img{
+width:100%;
+height:100%;
+min-height:250px;
+object-fit:cover;
+transition:.3s
+}
+
+.gallery-item:hover img{
+transform:scale(1.04)
+}
+
+.tag{
+position:absolute;
+left:12px;
+bottom:12px;
+background:rgba(0,0,0,.82);
+color:#fff;
+padding:6px 10px;
+font-size:12px;
+font-weight:900;
+border-radius:4px
+}
+
+.gallery-item:nth-child(2) .tag,
+.gallery-item:nth-child(4) .tag{
+background:var(--red)
+}
+
+/* REVIEWS */
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
+
+.review{
+border:1px solid #e6e6e6;
+border-radius:12px;
+padding:28px;
+background:#fff
+}
+
+.stars{
+color:#f4a900;
+letter-spacing:2px;
+font-size:18px;
+margin-bottom:12px
+}
+
+.review p{
+font-style:italic;
+color:#555;
+margin-bottom:15px
+}
+
+.review strong{
+font-size:14px
+}
+
+.review-cta{
+text-align:center;
+margin-top:30px
+}
+
+/* AREAS */
+
+.areas{
+background:#111;
+color:#fff
+}
+
+.areas .section-title p{
+color:#bbb
+}
+
+.area-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px
+}
+
+.area{
+border:1px solid #444;
+border-radius:30px;
+padding:10px 17px;
+color:#eee
+}
+
+/* CONTACT */
+
+.contact{
+display:grid;
+grid-template-columns:.9fr 1.1fr;
+gap:45px;
+align-items:start
+}
+
+.contact h2{
+font-size:42px;
+line-height:1.1;
+margin-bottom:15px
+}
+
+.contact p{
+color:#666;
+margin-bottom:22px
+}
+
+.contact-card{
+background:var(--dark);
+color:#fff;
+border-radius:14px;
+padding:30px
+}
+
+.contact-line{
+display:flex;
+gap:13px;
+align-items:flex-start;
+margin:17px 0
+}
+
+.contact-line b{
+display:block
+}
+
+.contact-line span{
+color:#bbb;
+font-size:14px
+}
+
+form{
+display:grid;
+gap:13px
+}
+
+input,
+textarea,
+select{
+width:100%;
+border:1px solid #ddd;
+border-radius:7px;
+padding:14px 15px;
+font:inherit;
+background:#fff
+}
+
+textarea{
+min-height:130px;
+resize:vertical
+}
+
+.form-note{
+font-size:12px;
+color:#777
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:#fff
+}
+
+.footer-main{
+padding:45px 0;
+display:flex;
+justify-content:space-between;
+gap:30px;
+align-items:center
+}
+
+.footer-brand{
+font-size:26px;
+font-weight:900
+}
+
+.footer-brand span{
+color:var(--red)
+}
+
+.footer-main p{
+color:#aaa;
+font-size:14px;
+margin-top:7px
+}
+
+.footer-phone{
+font-size:26px;
+font-weight:900;
+color:#fff
+}
+
+/* FLOATING CALL */
+
+.floating-call{
+position:fixed;
+right:18px;
+bottom:18px;
+z-index:999;
+background:var(--red);
+color:#fff;
+padding:15px 18px;
+border-radius:50px;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+font-weight:900
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.menu{
+display:none
+}
+
+.nav-phone{
+padding:10px 13px;
+font-size:13px
+}
+
+.hero{
+min-height:700px
+}
+
+.hero-content{
+padding:65px 0
+}
+
+.problem,
+.why,
+.contact{
+grid-template-columns:1fr
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr)
+}
+
+.review-grid{
+grid-template-columns:1fr
+}
+
+.gallery-grid{
+grid-template-columns:1fr 1fr
+}
+
+.footer-main{
+flex-direction:column;
+align-items:flex-start
+}
+}
+
+@media(max-width:600px){
+
+section{
+padding:60px 0
+}
+
+.brand-mark{
+font-size:27px
+}
+
+.brand small{
+font-size:8px
+}
+
+.nav{
+min-height:65px
+}
+
+.nav-phone{
+font-size:12px;
+padding:9px 10px
+}
+
+.hero{
+min-height:720px;
+background-position:center
+}
+
+.hero p{
+font-size:17px
+}
+
+h1{
+font-size:46px;
+letter-spacing:-1px
+}
+
+.trust-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px
+}
+
+.btn{
+width:100%
+}
+
+.problem h2,
+.why h2,
+.contact h2{
+font-size:34px
+}
+
+.list{
+grid-template-columns:1fr
+}
+
+.photo-card img,
+.why-img img{
+height:320px
+}
+
+.service-grid{
+grid-template-columns:1fr
+}
+
+.gallery-grid{
+grid-template-columns:1fr
+}
+
+.gallery-item{
+min-height:260px
+}
+
+.floating-call{
+left:14px;
+right:14px;
+bottom:12px;
+text-align:center
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<a href="#top" class="brand">
+<div class="brand-mark">J<span>&</span>M</div>
+<div>
+<small>DRYWALL SOLUTION LLC</small>
+</div>
+</a>
+
+<nav class="menu">
+<a href="#top">HOME</a>
+<a href="#services">SERVICES</a>
+<a href="#why">WHY J&M</a>
+<a href="#gallery">GALLERY</a>
+<a href="#reviews">REVIEWS</a>
+<a href="#contact">CONTACT</a>
+</nav>
+
+<a class="nav-phone" href="tel:+16192737742">
+☎ (619) 273-7742
+</a>
+
+</div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div class="eyebrow">
+PROFESSIONAL DRYWALL SERVICES
+</div>
+
+<h1>
+DRYWALL DONE <span class="red">RIGHT.</span>
+</h1>
+
+<p>
+Professional drywall repair, installation, finishing, texture and painting.
+Quality work, reliable service and free estimates.
+</p>
+
+<div class="trust-row">
+
+<div class="trust">
+<span class="check">✓</span>
+FREE ESTIMATES
+</div>
+
+<div class="trust">
+<span class="check">✓</span>
+QUALITY WORK
+</div>
+
+<div class="trust">
+<span class="check">✓</span>
+RELIABLE SERVICE
+</div>
+
+<div class="trust">
+<span class="check">✓</span>
+RESIDENTIAL & COMMERCIAL
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a class="btn btn-primary" href="tel:+16192737742">
+☎ CALL NOW
+</a>
+
+<a class="btn btn-outline" href="#contact">
+GET A FREE ESTIMATE
+</a>
+
+</div>
+
+<div class="hero-note">
+📞 Call J&M today: (619) 273-7742
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROBLEM -->
+
+<section>
+
+<div class="container problem">
+
+<div>
+
+<h2>
+NEED DRYWALL REPAIR?
+<br>
+<span class="red">WE CAN HELP.</span>
+</h2>
+
+<p>
+From small holes and cracks to complete drywall installation,
+J&M Drywall Solution provides clean, professional finishes.
+</p>
+
+<ul class="list">
+
+<li>Drywall hole repair</li>
+<li>Wall & ceiling repair</li>
+<li>Crack repair</li>
+<li>Patch work</li>
+<li>Drywall replacement</li>
+<li>Texture matching</li>
+<li>Water-damage repair</li>
+<li>Drywall finishing</li>
+
+</ul>
+
+<a class="btn btn-primary" href="tel:+16192737742">
+CALL FOR A FREE ESTIMATE
+</a>
+
+</div>
+
+<div class="photo-card">
+
+<img
+src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=85"
+alt="Professional drywall and construction work">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>OUR DRYWALL SERVICES</h2>
+
+<p>
+Professional solutions for repairs, installation,
+finishing and painting.
+</p>
+
+</div>
+
+<div class="service-grid">
+
+<article class="service">
+<div class="icon">▣</div>
+<h3>DRYWALL INSTALLATION</h3>
+<p>
+Complete drywall installation for residential and commercial projects.
+</p>
+</article>
+
+<article class="service">
+<div class="icon">✎</div>
+<h3>DRYWALL REPAIR</h3>
+<p>
+Repair holes, cracks, damaged walls and ceilings with a clean finish.
+</p>
+</article>
+
+<article class="service">
+<div class="icon">□</div>
+<h3>PATCH WORK</h3>
+<p>
+Small or larger patch work prepared for a smooth, professional finish.
+</p>
+</article>
+
+<article class="service">
+<div class="icon">✦</div>
+<h3>TEXTURE & FINISHING</h3>
+<p>
+Smooth, knockdown, orange peel and texture matching when needed.
+</p>
+</article>
+
+<article class="service">
+<div class="icon">◯</div>
+<h3>WATER DAMAGE REPAIR</h3>
+<p>
+Drywall repair or replacement for areas affected by water damage.
+</p>
+</article>
+
+<article class="service">
+<div class="icon">▰</div>
+<h3>PAINTING SERVICES</h3>
+<p>
+Interior and exterior painting to complete a clean finished project.
+</p>
+</article>
+
+</div>
+</div>
+</section>
+
+
+<!-- WHY -->
+
+<section id="why">
+
+<div class="container why">
+
+<div class="why-img">
+
+<img
+src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=85"
+alt="Professional worker completing construction work">
+
+</div>
+
+<div>
+
+<h2>
+WHY CHOOSE
+<span class="red">J&M DRYWALL SOLUTION?</span>
+</h2>
+
+<div class="why-list">
+
+<div class="why-item">
+
+<div class="check">✓</div>
+
+<div>
+<strong>QUALITY WORKMANSHIP</strong>
+<span>Attention to detail on every project.</span>
+</div>
+
+</div>
+
+<div class="why-item">
+
+<div class="check">✓</div>
+
+<div>
+<strong>RELIABLE SERVICE</strong>
+<span>Professional service and respect for your home or business.</span>
+</div>
+
+</div>
+
+<div class="why-item">
+
+<div class="check">✓</div>
+
+<div>
+<strong>FREE ESTIMATES</strong>
+<span>Contact us to discuss your project and request an estimate.</span>
+</div>
+
+</div>
+
+<div class="why-item">
+
+<div class="check">✓</div>
+
+<div>
+<strong>RESIDENTIAL & COMMERCIAL</strong>
+<span>Drywall and painting solutions for different project sizes.</span>
+</div>
+
+</div>
+
+</div>
+
+<a class="btn btn-primary" href="tel:+16192737742">
+CALL NOW — (619) 273-7742
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>OUR WORK SPEAKS FOR ITSELF</h2>
+
+<p>
+Professional drywall and finishing work.
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=900&q=85" alt="Drywall project">
+<span class="tag">PROJECT</span>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Finished interior">
+<span class="tag">FINISHED</span>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=85" alt="Wall finishing">
+<span class="tag">PROJECT</span>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=85" alt="Finished residential interior">
+<span class="tag">FINISHED</span>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Professional interior finish">
+<span class="tag">DETAIL</span>
+</div>
+
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85" alt="Clean finished interior">
+<span class="tag">RESULT</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section id="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>WHAT OUR CUSTOMERS SAY</h2>
+
+<p>
+Customer feedback helps J&M continue to grow.
+</p>
+
+</div>
+
+<div class="review-grid">
+
+<article class="review">
+
+<div class="stars">★★★★★</div>
+
+<p>
+“Add one of your real Google reviews here.”
+</p>
+
+<strong>— J&M Customer</strong>
+
+</article>
+
+
+<article class="review">
+
+<div class="stars">★★★★★</div>
+
+<p>
+“Add another real customer review here.”
+</p>
+
+<strong>— J&M Customer</strong>
+
+</article>
+
+
+<article class="review">
+
+<div class="stars">★★★★★</div>
+
+<p>
+“Add another real customer review here.”
+</p>
+
+<strong>— J&M Customer</strong>
+
+</article>
+
+</div>
+
+<div class="review-cta">
+
+<a
+class="btn btn-primary"
+href="https://g.page/r/CV952KHEu3jQEBM/review"
+target="_blank"
+rel="noopener">
+
+★ LEAVE US A GOOGLE REVIEW
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AREAS -->
+
+<section class="areas">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>SERVICE AREAS</h2>
+
+<p>
+Serving Los Angeles and surrounding areas.
+Contact us to confirm your location.
+</p>
+
+</div>
+
+<div class="area-grid">
+
+<span class="area">Los Angeles</span>
+<span class="area">Long Beach</span>
+<span class="area">Anaheim</span>
+<span class="area">Orange County</span>
+<span class="area">Riverside</span>
+<span class="area">San Diego</span>
+<span class="area">Surrounding Areas</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container contact">
+
+<div>
+
+<h2>
+READY TO START YOUR
+<span class="red">PROJECT?</span>
+</h2>
+
+<p>
+Whether you need a small drywall repair, complete installation,
+texture and finishing, or painting, contact J&M Drywall Solution
+for a free estimate.
+</p>
+
+<div class="contact-card">
+
+<div class="contact-line">
+
+<div class="check">☎</div>
+
+<div>
+<b>CALL J&M</b>
+<span>(619) 273-7742</span>
+</div>
+
+</div>
+
+
+<div class="contact-line">
+
+<div class="check">✓</div>
+
+<div>
+<b>FREE ESTIMATES</b>
+<span>Contact us to discuss your project.</span>
+</div>
+
+</div>
+
+
+<div class="contact-line">
+
+<div class="check">⌂</div>
+
+<div>
+<b>SERVICE AREA</b>
+<span>Los Angeles & surrounding areas.</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div>
+
+<form>
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
+
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number"
+required>
+
+<input
+type="text"
+name="city"
+placeholder="City">
+
+<select name="service">
+
+<option value="">
+What service do you need?
+</option>
+
+<option>Drywall Repair</option>
+<option>Drywall Installation</option>
+<option>Patch Work</option>
+<option>Texture & Finishing</option>
+<option>Water Damage Repair</option>
+<option>Painting</option>
+
+</select>
+
+<textarea
+name="project"
+placeholder="Tell us about your project...">
+</textarea>
+
+<a
+class="btn btn-primary"
+href="tel:+16192737742">
+
+☎ REQUEST A FREE ESTIMATE
+
+</a>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-main">
+
+<div>
+
+<div class="footer-brand">
+J<span>&amp;</span>M DRYWALL SOLUTION LLC
+</div>
+
+<p>
+Professional drywall repair, installation,
+finishing and painting.
+</p>
+
+</div>
+
+<a
+class="footer-phone"
+href="tel:+16192737742">
+
+(619) 273-7742
+
+</a>
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING CALL -->
+
+<a
+class="floating-call"
+href="tel:+16192737742">
+
+☎ CALL J&M — (619) 273-7742
+
+</a>
+
+</body>
+</html>
