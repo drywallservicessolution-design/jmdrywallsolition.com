@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaxiola Drywall Solutions | Professional Drywall Services</title>
+<meta name="description" content="Gaxiola Drywall Solutions. Professional drywall installation, finishing, texture and repair services. Contact us for an estimate.">
+<meta name="theme-color" content="#080808">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --gold: #c9a44c;
+  --light-gold: #f1d58b;
+  --black: #080808;
+  --dark: #121212;
+  --white: #ffffff;
+  --gray: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0,0,0,.94);
+  border-bottom: 1px solid rgba(201,164,76,.3);
+  backdrop-filter: blur(12px);
+}
+
+nav {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.logo span,
+.footer-logo span {
+  color: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-btn {
+  border: 1px solid var(--gold);
+  padding: 13px 18px;
+  color: var(--gold);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.95),rgba(0,0,0,.65),rgba(0,0,0,.2)),
+    url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=85')
+    center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 850px;
+  padding-top: 100px;
+}
+
+.hero-label {
+  color: var(--gold);
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(42px,7vw,82px);
+  font-weight: 900;
+  line-height: 1.08;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #cccccc;
+  max-width: 620px;
+  margin-bottom: 35px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 17px 27px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #080808;
+}
+
+.btn-gold:hover {
+  background: var(--light-gold);
+  transform: translateY(-4px);
+}
+
+.btn-outline {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+/* SECTION TITLES */
+
+.section-label {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-size: clamp(30px,4vw,48px);
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.section-title span {
+  color: var(--gold);
+}
+
+.center {
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: auto;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* INTRO */
+
+.intro {
+  padding: 110px 0;
+  text-align: center;
+  background: #101010;
+}
+
+/* SERVICES */
+
+.services {
+  padding: 110px 0;
+  background: #080808;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 22px;
+  margin-top: 55px;
+}
+
+.service-card {
+  background: #141414;
+  border: 1px solid #292929;
+  padding: 38px 28px;
+  transition: .4s;
+}
+
+.service-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-8px);
+}
+
+.service-number {
+  font-size: 35px;
+  font-weight: 900;
+  color: var(--gold);
+  margin-bottom: 25px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #999;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* ABOUT */
+
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #121212;
+}
+
+.feature-image {
+  min-height: 550px;
+  background:
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85')
+    center/cover no-repeat;
+}
+
+.feature-content {
+  padding: 90px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-content h2 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.feature-content h2 span {
+  color: var(--gold);
+}
+
+.feature-content p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.feature-list {
+  list-style: none;
+  margin: 15px 0 30px;
+}
+
+.feature-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #292929;
+  font-size: 13px;
+  color: #ddd;
+}
+
+.feature-list li::before {
+  content: "✦";
+  color: var(--gold);
+  margin-right: 12px;
+}
+
+/* GALLERY */
+
+.gallery {
+  padding: 110px 0;
+  background: #080808;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.gallery-item {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  background: #222;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .6s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item::after {
+  content: "GAXIOLA DRYWALL SOLUTIONS";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 15px;
+  background: linear-gradient(transparent,rgba(0,0,0,.9));
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* WHY US */
+
+.why {
+  padding: 100px 0;
+  background: #121212;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.why-card {
+  text-align: center;
+  padding: 25px;
+}
+
+.why-icon {
+  font-size: 35px;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.why-card h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #999;
+}
+
+/* CTA */
+
+.cta {
+  padding: 110px 20px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0,0,0,.86),rgba(0,0,0,.9)),
+    url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85')
+    center/cover;
+}
+
+.cta h2 {
+  font-size: clamp(32px,5vw,55px);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.cta h2 span {
+  color: var(--gold);
+}
+
+.cta p {
+  color: #bbb;
+  margin-bottom: 35px;
+  line-height: 1.8;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 100px 0;
+  background: #0c0c0c;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.contact-info h3 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.contact-detail {
+  padding: 20px 0;
+  border-bottom: 1px solid #292929;
+}
+
+.contact-detail strong {
+  display: block;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contact-detail a {
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.contact-form {
+  background: #151515;
+  padding: 35px;
+  border: 1px solid #292929;
+}
+
+.contact-form h3 {
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 15px;
+  background: #080808;
+  border: 1px solid #333;
+  color: white;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--gold);
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 35px 0;
+  background: #050505;
+  border-top: 1px solid #282828;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+footer p {
+  color: #777;
+  font-size: 11px;
+  line-height: 2;
+}
+
+/* MOBILE */
+
+@media(max-width:900px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    background: #080808;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .service-grid,
+  .gallery-grid,
+  .why-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .feature {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width:600px) {
+  nav {
+    height: 75px;
+  }
+
+  .logo {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .nav-links {
+    top: 75px;
+  }
+
+  .hero {
+    min-height: 850px;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .service-grid,
+  .gallery-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    height: 270px;
+  }
+
+  .feature-image {
+    min-height: 350px;
+  }
+
+  .feature-content {
+    padding: 70px 8%;
+  }
+
+  .feature-content h2 {
+    font-size: 34px;
+  }
+
+  .contact-form {
+    padding: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="#home" class="logo">
+        GAXIOLA <span>DRYWALL</span>
+      </a>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+16192734472" class="nav-btn">CALL NOW</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-label">QUALITY • PRECISION • PROFESSIONALISM</div>
+
+      <h1>
+        EXCELLENCE IN<br>
+        <span>DRYWALL</span><br>
+        SOLUTIONS.
+      </h1>
+
+      <p>
+        Professional drywall installation, finishing, texture and repair services. We are committed to delivering quality craftsmanship and outstanding results on every project.
+      </p>
+
+      <div class="buttons">
+        <a href="#contact" class="btn btn-gold">REQUEST A FREE ESTIMATE</a>
+        <a href="tel:+16192734472" class="btn btn-outline">CALL (619) 273-4472</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="container">
+    <div class="section-label">WELCOME TO GAXIOLA</div>
+
+    <h2 class="section-title">
+      BUILDING QUALITY.<br>
+      <span>DELIVERING EXCELLENCE.</span>
+    </h2>
+
+    <p class="intro-text">
+      At Gaxiola Drywall Solutions, we believe every detail matters. Our goal is to provide professional drywall solutions with precision, dedication and quality workmanship. From residential projects to commercial spaces, we focus on results that make a difference.
+    </p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="center">
+      <div class="section-label">WHAT WE DO</div>
+      <h2 class="section-title">OUR <span>SERVICES</span></h2>
+      <p class="intro-text">Professional solutions for your next construction or renovation project.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-number">01</div>
+        <h3>Drywall Installation</h3>
+        <p>Professional drywall installation for residential and commercial projects, with attention to detail and quality.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <h3>Drywall Finishing</h3>
+        <p>Clean, smooth drywall finishing to help create beautiful surfaces ready for the next stage.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">03</div>
+        <h3>Texture Services</h3>
+        <p>Professional wall and ceiling texture services to achieve the finish your project requires.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">04</div>
+        <h3>Drywall Repairs</h3>
+        <p>Reliable drywall repair solutions for damaged walls, ceilings and interior surfaces.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">05</div>
+        <h3>Residential Projects</h3>
+        <p>Quality drywall work for homes, remodeling, additions and renovation projects.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">06</div>
+        <h3>Commercial Projects</h3>
+        <p>Professional drywall services for commercial spaces and construction projects.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="about">
+  <div class="feature-image"></div>
+
+  <div class="feature-content">
+    <div class="section-label">WHY GAXIOLA</div>
+
+    <h2>QUALITY IS IN<br><span>EVERY DETAIL.</span></h2>
+
+    <p>
+      We understand that every project deserves attention, commitment and professional workmanship. Our focus is to provide dependable drywall solutions and a great experience from start to finish.
+    </p>
+
+    <ul class="feature-list">
+      <li>Professional workmanship</li>
+      <li>Attention to every detail</li>
+      <li>Residential and commercial services</li>
+      <li>Commitment to quality</li>
+      <li>Customer-focused service</li>
+    </ul>
+
+    <a href="#contact" class="btn btn-gold">LET'S DISCUSS YOUR PROJECT</a>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="center">
+      <div class="section-label">OUR WORK</div>
+      <h2 class="section-title">PROJECT <span>GALLERY</span></h2>
+      <p class="intro-text">A look at the craftsmanship and quality we strive to deliver.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Interior construction project">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Modern interior project">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Interior finishing">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Residential interior">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=900&q=85" alt="Home renovation">
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85" alt="Modern construction interior">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <div class="center">
+      <div class="section-label">OUR COMMITMENT</div>
+      <h2 class="section-title">THE GAXIOLA <span>STANDARD</span></h2>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">✦</div>
+        <h3>Quality Work</h3>
+        <p>We pay attention to the details that make a difference in every project.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">◆</div>
+        <h3>Professional Service</h3>
+        <p>We value communication, organization and respect for every customer.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">★</div>
+        <h3>Customer Satisfaction</h3>
+        <p>Our goal is to deliver results that meet your project's needs and expectations.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>READY TO START<br><span>YOUR NEXT PROJECT?</span></h2>
+
+  <p>
+    Let's talk about your drywall project.<br>
+    Contact Gaxiola Drywall Solutions today.
+  </p>
+
+  <div class="buttons" style="justify-content:center">
+    <a href="tel:+16192734472" class="btn btn-gold">CALL US TODAY</a>
+    <a href="#contact" class="btn btn-outline">GET A FREE ESTIMATE</a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="center">
+      <div class="section-label">GET IN TOUCH</div>
+      <h2 class="section-title">LET'S BUILD <span>TOGETHER</span></h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h3>Contact Gaxiola Drywall Solutions</h3>
+
+        <p>
+          Have a project in mind? We would be happy to hear from you. Contact us to discuss your project and request an estimate.
+        </p>
+
+        <div class="contact-detail">
+          <strong>PHONE</strong>
+          <a href="tel:+16192734472">(619) 273-4472</a>
+        </div>
+
+        <div class="contact-detail">
+          <strong>EMAIL</strong>
+          <a href="mailto:Gaxioladrywallsolutionsllc@gmail.com">Gaxioladrywallsolutionsllc@gmail.com</a>
+        </div>
+
+        <div class="contact-detail">
+          <strong>SERVICE</strong>
+          Residential & Commercial Drywall Solutions
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="sendEmail(event)">
+        <h3>Request an Estimate</h3>
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+        <input type="email" id="email" placeholder="Your Email Address" required>
+
+        <select id="service" required>
+          <option value="">Select a Service</option>
+          <option>Drywall Installation</option>
+          <option>Drywall Finishing</option>
+          <option>Texture Services</option>
+          <option>Drywall Repairs</option>
+          <option>Residential Project</option>
+          <option>Commercial Project</option>
+          <option>Other</option>
+        </select>
+
+        <textarea id="message" placeholder="Tell us about your project..." required></textarea>
+
+        <button type="submit" class="btn btn-gold">SEND REQUEST</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">
+      GAXIOLA <span>DRYWALL SOLUTIONS</span>
+    </div>
+
+    <p>
+      Professional Drywall Services<br>
+      Phone: (619) 273-4472<br>
+      Gaxioladrywallsolutionsllc@gmail.com
+    </p>
+
+    <p style="margin-top:20px">
+      © <span id="year"></span> Gaxiola Drywall Solutions. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navLinks").classList.remove("active");
+  });
+});
+
+function sendEmail(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value;
+
+  const subject = encodeURIComponent("New Project Estimate Request");
+
+  const body = encodeURIComponent(
+    "New estimate request\n\n" +
+    "Name: " + name + "\n" +
+    "Phone: " + phone + "\n" +
+    "Email: " + email + "\n" +
+    "Service: " + service + "\n\n" +
+    "Project Details:\n" + message
+  );
+
+  window.location.href =
+    "mailto:Gaxioladrywallsolutionsllc@gmail.com?subject=" +
+    subject + "&body=" + body;
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
