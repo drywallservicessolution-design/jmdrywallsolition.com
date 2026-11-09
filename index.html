@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAXIOLA DRYWALL SOLUTIONS | Professional Drywall Services</title>
+<meta name="description" content="Professional drywall installation, taping, finishing, texturing and repair in San Diego and Los Angeles, California.">
+<meta name="theme-color" content="#080808">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://jmdrywallsolution.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"HomeAndConstructionBusiness",
+ "name":"GAXIOLA DRYWALL SOLUTIONS",
+ "url":"https://jmdrywallsolution.com/",
+ "description":"Professional drywall installation, taping, finishing, texturing and repair services.",
+ "telephone":"+16192734472",
+ "email":"Gaxioladrywallsolutionsllc@gmail.com",
+ "areaServed":[
+  {"@type":"City","name":"San Diego"},
+  {"@type":"City","name":"Los Angeles"}
+ ]
+}
+</script>
+
+<style>
+:root {
+ --gold:#c9a44c;
+ --light-gold:#f1d58b;
+ --black:#080808;
+ --dark:#121212;
+ --white:#ffffff;
+ --gray:#aaaaaa;
+}
+* {
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ scroll-behavior:smooth;
+}
+body {
+ font-family:'Montserrat',sans-serif;
+ background:var(--black);
+ color:var(--white);
+ line-height:1.7;
+ overflow-x:hidden;
+}
+a {
+ text-decoration:none;
+ color:inherit;
+}
+.container {
+ width:90%;
+ max-width:1200px;
+ margin:auto;
+}
+.gold {color:var(--gold);}
+.section {padding:85px 0;}
+.section-heading {
+ text-align:center;
+ margin-bottom:45px;
+}
+.section-heading h2 {
+ font-size:clamp(28px,4vw,42px);
+ font-weight:800;
+ margin-bottom:10px;
+}
+.section-heading p {
+ color:var(--gray);
+ max-width:680px;
+ margin:auto;
+}
+.gold-line {
+ width:75px;
+ height:4px;
+ background:var(--gold);
+ margin:15px auto;
+}
+
+/* HEADER */
+header {
+ background:rgba(8,8,8,.97);
+ border-bottom:1px solid rgba(201,164,76,.35);
+ position:sticky;
+ top:0;
+ z-index:1000;
+}
+nav {
+ min-height:84px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ position:relative;
+}
+.logo {
+ font-size:21px;
+ font-weight:900;
+ letter-spacing:1px;
+ line-height:1.2;
+}
+.logo span {
+ display:block;
+ color:var(--gold);
+ font-size:12px;
+ letter-spacing:4px;
+}
+.nav-links {
+ display:flex;
+ align-items:center;
+ gap:22px;
+}
+.nav-links a {
+ font-size:12px;
+ font-weight:700;
+ transition:.3s;
+}
+.nav-links a:hover {color:var(--gold);}
+.nav-btn {
+ background:var(--gold);
+ color:var(--black)!important;
+ padding:12px 18px;
+ border-radius:3px;
+}
+.nav-btn:hover {background:var(--light-gold);}
+.menu-toggle {
+ display:none;
+ font-size:28px;
+ cursor:pointer;
+ color:var(--gold);
+ background:none;
+ border:0;
+}
+
+/* HERO */
+.hero {
+ min-height:660px;
+ display:flex;
+ align-items:center;
+ text-align:center;
+ background:
+ linear-gradient(rgba(0,0,0,.78),rgba(0,0,0,.88)),
+ radial-gradient(ellipse at center,#3b3020 0%,#111 55%,#080808 100%);
+ border-bottom:1px solid rgba(201,164,76,.25);
+}
+.hero-content {
+ max-width:900px;
+ margin:auto;
+ padding:90px 20px;
+}
+.hero-label {
+ color:var(--gold);
+ font-size:13px;
+ letter-spacing:5px;
+ font-weight:700;
+ margin-bottom:20px;
+}
+.hero h1 {
+ font-size:clamp(38px,7vw,76px);
+ font-weight:900;
+ line-height:1.12;
+ margin-bottom:25px;
+}
+.hero h1 span {color:var(--gold);}
+.hero p {
+ color:#ddd;
+ font-size:17px;
+ max-width:700px;
+ margin:0 auto 35px;
+}
+.hero-buttons,.contact-actions {
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ gap:15px;
+}
+.btn {
+ display:inline-block;
+ padding:15px 27px;
+ font-size:13px;
+ font-weight:800;
+ letter-spacing:1px;
+ border:1px solid var(--gold);
+ transition:.3s;
+}
+.btn-gold {
+ background:var(--gold);
+ color:var(--black);
+}
+.btn-gold:hover {background:var(--light-gold);}
+.btn-outline {color:var(--white);}
+.btn-outline:hover {
+ background:var(--gold);
+ color:var(--black);
+}
+
+/* TRUST BAR */
+.trust-bar {
+ background:#151515;
+ border-bottom:1px solid #292929;
+ padding:25px 0;
+}
+.trust-grid {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:20px;
+ text-align:center;
+}
+.trust-item {
+ font-size:13px;
+ font-weight:700;
+ letter-spacing:1px;
+}
+.trust-item span {
+ display:block;
+ color:var(--gold);
+ font-size:12px;
+ margin-bottom:5px;
+}
+
+/* SERVICES */
+.services {background:var(--black);}
+.service-grid {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:22px;
+}
+.service-card {
+ background:var(--dark);
+ border:1px solid #292929;
+ padding:32px 25px;
+ transition:.3s;
+}
+.service-card:hover {
+ border-color:var(--gold);
+ transform:translateY(-5px);
+}
+.service-number {
+ color:var(--gold);
+ font-size:30px;
+ font-weight:900;
+ margin-bottom:10px;
+}
+.service-card h3 {
+ font-size:18px;
+ margin-bottom:10px;
+}
+.service-card p {
+ color:var(--gray);
+ font-size:14px;
+}
+
+/* ABOUT */
+.about {background:#111;}
+.about-grid {
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:50px;
+ align-items:center;
+}
+.about-panel {
+ min-height:340px;
+ border:1px solid var(--gold);
+ background:linear-gradient(145deg,#292216,#111 65%);
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ padding:30px;
+}
+.about-panel strong {
+ display:block;
+ font-size:35px;
+ line-height:1.2;
+}
+.about-panel strong span {color:var(--gold);}
+.about-panel small {
+ display:block;
+ color:var(--gold);
+ letter-spacing:3px;
+ margin-top:15px;
+}
+.about-text h2 {
+ font-size:35px;
+ line-height:1.2;
+ margin-bottom:20px;
+}
+.about-text p {
+ color:var(--gray);
+ margin-bottom:16px;
+}
+.about-text ul {
+ list-style:none;
+ margin-top:18px;
+}
+.about-text li {
+ margin-bottom:9px;
+ font-weight:600;
+}
+.about-text li:before {
+ content:"✓";
+ color:var(--gold);
+ margin-right:12px;
+}
+
+/* SERVICE AREAS */
+.areas {background:var(--black);}
+.area-grid {
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:25px;
+}
+.area-card {
+ padding:50px 25px;
+ text-align:center;
+ background:linear-gradient(145deg,#201b12,#121212);
+ border:1px solid rgba(201,164,76,.5);
+}
+.area-card h3 {
+ font-size:27px;
+ margin-bottom:10px;
+}
+.area-card p {color:var(--gray);}
+
+/* GALLERY */
+.gallery {background:#111;}
+.gallery-grid {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:18px;
+}
+.gallery-box {
+ min-height:210px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ padding:20px;
+ border:1px solid #444;
+ background:linear-gradient(145deg,#292929,#141414);
+}
+.gallery-box span {
+ color:var(--gold);
+ font-weight:800;
+ letter-spacing:2px;
+}
+.gallery-note {
+ text-align:center;
+ color:var(--gray);
+ font-size:13px;
+ margin-top:18px;
+}
+
+/* CONTACT */
+.contact {background:var(--black);}
+.contact-box {
+ max-width:850px;
+ margin:auto;
+ padding:48px 30px;
+ background:#151515;
+ border:1px solid rgba(201,164,76,.5);
+ text-align:center;
+}
+.contact-box h2 {
+ font-size:clamp(27px,4vw,40px);
+ margin-bottom:15px;
+}
+.contact-box>p {
+ color:var(--gray);
+ margin-bottom:25px;
+}
+.contact-details {margin:25px 0;}
+.contact-details p {
+ margin:12px 0;
+ color:var(--white);
+ overflow-wrap:anywhere;
+}
+.contact-details strong {color:var(--gold);}
+
+/* FOOTER */
+footer {
+ background:#050505;
+ border-top:1px solid rgba(201,164,76,.35);
+ padding:32px 0;
+ text-align:center;
+}
+.footer-logo {
+ font-size:20px;
+ font-weight:900;
+ margin-bottom:8px;
+}
+.footer-logo span {color:var(--gold);}
+footer p {
+ color:var(--gray);
+ font-size:12px;
+ margin-top:8px;
+}
+
+/* MOBILE */
+@media(max-width:900px) {
+ .menu-toggle {display:block;}
+ .nav-links {
+  display:none;
+  position:absolute;
+  top:84px;
+  left:0;
+  width:100%;
+  background:#101010;
+  border-top:1px solid var(--gold);
+  flex-direction:column;
+  align-items:stretch;
+  gap:0;
+  padding:10px 5%;
+ }
+ .nav-links.active {display:flex;}
+ .nav-links a {
+  padding:13px 8px;
+  border-bottom:1px solid #292929;
+ }
+ .nav-links .nav-btn {
+  margin-top:10px;
+  text-align:center;
+ }
+ .about-grid {grid-template-columns:1fr;}
+ .service-grid {grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px) {
+ .section {padding:62px 0;}
+ .trust-grid,.service-grid,.area-grid,.gallery-grid {
+  grid-template-columns:1fr;
+ }
+ .hero {min-height:560px;}
+ .hero-content {padding:65px 10px;}
+ .hero p {font-size:15px;}
+ .about-panel {min-height:240px;}
+ .contact-box {padding:34px 18px;}
+ .btn {width:100%;text-align:center;}
+ .hero-buttons {width:100%;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="container">
+  <nav>
+   <a href="#home" class="logo">
+    GAXIOLA
+    <span>DRYWALL SOLUTIONS</span>
+   </a>
+
+   <button class="menu-toggle" type="button"
+   aria-label="Open menu" aria-expanded="false"
+   onclick="toggleMenu()">☰</button>
+
+   <div class="nav-links" id="navLinks">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#areas-served" onclick="closeMenu()">Service Areas</a>
+    <a href="#about" onclick="closeMenu()">About Us</a>
+    <a href="#gallery" onclick="closeMenu()">Gallery</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+    <a href="tel:+16192734472" class="nav-btn">CALL NOW</a>
+   </div>
+  </nav>
+ </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+ <div class="hero-content">
+  <div class="hero-label">QUALITY • PROFESSIONALISM • EXPERIENCE</div>
+  <h1>PROFESSIONAL<br>
+  <span>DRYWALL SOLUTIONS</span></h1>
+  <p>
+   Professional drywall installation, taping, finishing,
+   texturing and repair services for residential and
+   commercial projects.
+  </p>
+  <div class="hero-buttons">
+   <a href="tel:+16192734472" class="btn btn-gold">CALL NOW</a>
+   <a href="#contact" class="btn btn-outline">REQUEST AN ESTIMATE</a>
+  </div>
+ </div>
+</section>
+
+<section class="trust-bar">
+ <div class="container trust-grid">
+  <div class="trust-item"><span>01</span>RESIDENTIAL PROJECTS</div>
+  <div class="trust-item"><span>02</span>COMMERCIAL PROJECTS</div>
+  <div class="trust-item"><span>03</span>DRYWALL SERVICES</div>
+ </div>
+</section>
+
+<section class="section services" id="services">
+ <div class="container">
+  <div class="section-heading">
+   <h2>OUR <span class="gold">SERVICES</span></h2>
+   <div class="gold-line"></div>
+   <p>Complete drywall solutions for residential and commercial properties.</p>
+  </div>
+
+  <div class="service-grid">
+   <article class="service-card">
+    <div class="service-number">01</div>
+    <h3>Drywall Installation</h3>
+    <p>Professional drywall installation for new construction, remodeling and renovation projects.</p>
+   </article>
+
+   <article class="service-card">
+    <div class="service-number">02</div>
+    <h3>Taping & Finishing</h3>
+    <p>Professional taping, joint compound application and smooth drywall finishing.</p>
+   </article>
+
+   <article class="service-card">
+    <div class="service-number">03</div>
+    <h3>Drywall Texture</h3>
+    <p>Texture application and finishing to achieve a consistent appearance.</p>
+   </article>
+
+   <article class="service-card">
+    <div class="service-number">04</div>
+    <h3>Drywall Repairs</h3>
+    <p>Drywall patching and repair services for damaged walls and ceilings.</p>
+   </article>
+
+   <article class="service-card">
+    <div class="service-number">05</div>
+    <h3>Residential Drywall</h3>
+    <p>Drywall solutions for homes, additions, remodels and residential construction.</p>
+   </article>
+
+   <article class="service-card">
+    <div class="service-number">06</div>
+    <h3>Commercial Drywall</h3>
+    <p>Drywall installation and finishing services for commercial construction projects.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="section about" id="about">
+ <div class="container about-grid">
+  <div class="about-panel">
+   <div>
+    <strong>GAXIOLA<br>
+    <span>DRYWALL SOLUTIONS</span></strong>
+    <small>QUALITY WORK. PROFESSIONAL RESULTS.</small>
+   </div>
+  </div>
+
+  <div class="about-text">
+   <h2>ABOUT <span class="gold">OUR COMPANY</span></h2>
+   <p>
+    GAXIOLA DRYWALL SOLUTIONS is focused on providing
+    professional drywall services with attention to detail
+    and quality workmanship.
+   </p>
+   <p>
+    We work on residential and commercial projects,
+    providing drywall installation, taping, finishing,
+    texturing and repair services.
+   </p>
+   <ul>
+    <li>Residential and commercial work</li>
+    <li>Attention to detail</li>
+    <li>Professional drywall services</li>
+    <li>Serving San Diego and Los Angeles</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="section areas" id="areas-served">
+ <div class="container">
+  <div class="section-heading">
+   <h2>AREAS <span class="gold">WE SERVE</span></h2>
+   <div class="gold-line"></div>
+   <p>Providing drywall services throughout Southern California.</p>
+  </div>
+
+  <div class="area-grid">
+   <div class="area-card">
+    <h3><span class="gold">SAN DIEGO</span></h3>
+    <p>Drywall services in San Diego County and surrounding communities.</p>
+   </div>
+
+   <div class="area-card">
+    <h3><span class="gold">LOS ANGELES</span></h3>
+    <p>Drywall services in Los Angeles and surrounding communities.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section gallery" id="gallery">
+ <div class="container">
+  <div class="section-heading">
+   <h2>OUR <span class="gold">WORK</span></h2>
+   <div class="gold-line"></div>
+   <p>Quality drywall workmanship for residential and commercial projects.</p>
+  </div>
+
+  <div class="gallery-grid">
+   <div class="gallery-box"><span>DRYWALL INSTALLATION</span></div>
+   <div class="gallery-box"><span>TAPING & FINISHING</span></div>
+   <div class="gallery-box"><span>TEXTURE WORK</span></div>
+  </div>
+
+  <p class="gallery-note">
+   Project photos can be added here to showcase your completed work.
+  </p>
+ </div>
+</section>
+
+<section class="section contact" id="contact">
+ <div class="container">
+  <div class="contact-box">
+   <h2>LET'S START YOUR <span class="gold">PROJECT</span></h2>
+   <p>
+    Contact GAXIOLA DRYWALL SOLUTIONS to discuss your
+    next drywall project and request an estimate.
+   </p>
+
+   <div class="contact-details">
+    <p><strong>PHONE:</strong> 619-273-4472</p>
+    <p><strong>EMAIL:</strong> Gaxioladrywallsolutionsllc@gmail.com</p>
+    <p><strong>SERVICE AREAS:</strong> San Diego & Los Angeles, California</p>
+   </div>
+
+   <div class="contact-actions">
+    <a href="tel:+16192734472" class="btn btn-gold">CALL NOW</a>
+    <a href="mailto:Gaxioladrywallsolutionsllc@gmail.com?subject=Drywall%20Project%20Estimate"
+    class="btn btn-outline">EMAIL US</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-logo">
+   GAXIOLA <span>DRYWALL SOLUTIONS</span>
+  </div>
+  <p>Professional Drywall Installation, Finishing & Repair</p>
+  <p>Serving San Diego and Los Angeles, California</p>
+  <p>© <span id="year"></span> GAXIOLA DRYWALL SOLUTIONS. All Rights Reserved.</p>
+ </div>
+</footer>
+
+<script>
+function toggleMenu() {
+ const menu = document.getElementById("navLinks");
+ const button = document.querySelector(".menu-toggle");
+ menu.classList.toggle("active");
+ button.setAttribute("aria-expanded", menu.classList.contains("active"));
+}
+
+function closeMenu() {
+ document.getElementById("navLinks").classList.remove("active");
+ document.querySelector(".menu-toggle").setAttribute("aria-expanded", "false");
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
